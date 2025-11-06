@@ -212,10 +212,10 @@ void* gaitacol_new(double initial_coeff) {
 	}
 	dsp_setup((t_pxobject*)x, 6);
 	outlet_new((t_object*)x, "signal");
-	x->x_bp     = 0.9;
-	x->x_ng     = 0.3;
-	x->x_vf     = 0.0;
-	x->x_va     = 0.0;
+	x->x_bp     = 0.95;
+	x->x_ng     = 0.094;
+	x->x_vf     = 2.0;
+	x->x_va     = 0.025;
 	x->x_fr     = 440.;
 	x->lastFreq = 440.;
 
